@@ -4,7 +4,7 @@ s = serial('/dev/cu.usbmodem1411');
 set(s,'BaudRate',9600);
 fopen(s);
 
-filename = 'phantom.mp3';
+filename = 'adrian.mp3';
 [Wave, fs] = audioread(filename);
 player = audioplayer(Wave, fs);
 
